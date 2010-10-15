@@ -1,0 +1,11 @@
+Tango Icons Plugin
+==================
+
+The sfTangoIconsPlugin offers a set of [Tango](http://tango.freedesktop.org/Tango_Icon_Library) icons in sizes 16x16, 22x22 and 32x32.
+
+Installation
+------------
+
+  * Install the plugin
+
+        $ symfony plugin:install sfThriftPlugin
