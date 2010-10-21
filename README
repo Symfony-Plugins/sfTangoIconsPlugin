@@ -1,11 +1,40 @@
-Tango Icons Plugin
-==================
+# Tango Icons Plugin #
 
 The sfTangoIconsPlugin offers a set of [Tango](http://tango.freedesktop.org/Tango_Icon_Library) icons in sizes 16x16, 22x22 and 32x32.
 
-Installation
-------------
+## Installation ##
 
   * Install the plugin
 
-        $ symfony plugin:install sfThriftPlugin
+        $ symfony plugin:install sfTangoIconsPlugin
+
+  * Clear cache
+
+        $ symfony cc
+
+## Configuration ##
+
+  * You can set the default size of icons in app.yml:
+
+        all:
+          tango_icons:
+            size: <?php echo TangoIconsSize::SMALL ?>
+
+  * Activate helper in settings.yml:
+
+        standard_helpers: [...TangoIcons]
+
+    or:
+
+        use_helper('TangoIcons');
+
+## Use ##
+
+If you have selected the default size of icons:
+
+    <img src="<?php echo ti_get_image_path('actions', 'go-home') ?>" alt="" />
+
+If you do not have determined the size of the default icons, or want to manually set the size of icons:
+
+    <img src="<?php echo ti_get_image_path('actions', 'go-home', TangoIconsSize::SMALL) ?>" alt="" />
+
