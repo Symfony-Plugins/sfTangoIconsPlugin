@@ -1,17 +1,20 @@
 <?php
 class TangoIconsSize {
 	/**
-	 * Small icons
+	 * At 16×16 pixels, the "Extra Small" size is used in places such as
+         * lists (file dialog, message list in an e-mail client, etc.) and menus.
+         *
 	 */
-	const SMALL = 16;
+	const EXTRA_SMALL = 16;
 
 	/**
-	 * Medium icons
+         * "Small" is the common size for application toolbar icons. Its bitmap
+         * size is 22×22 pixels.
 	 */
-	const MEDIUM = 22;
+	const SMALL = 22;
 
 	/**
-	 * Large icons
+	 * A very common size of 32x32px is used on some menus (slab).
 	 */
-	const LARGE = 32;
+	const MEDIUM = 32;
 }
