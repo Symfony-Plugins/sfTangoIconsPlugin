@@ -8,6 +8,9 @@
  * @return string Path to the icon
  */
 function ti_get_image_path($context, $name, $size=null) {
-	$size = $size === null ? sfConfig::get('app_tango_icons_size', TangoIconsSize::SMALL) : intval($size);
-	return sfContext::getInstance()->getRequest()->getRelativeUrlRoot()."/sfTangoIconsPlugin/images/{$size}x{$size}/{$context}/{$name}.png";
+  $size = $size === null ? sfConfig::get('app_tango_icons_size', TangoIconsSize::EXTRA_SMALL) : $size;
+  $size = TangoIconsSize::normalize($size);
+  return sprintf('%s/sfTangoIconsPlugin/images/%dx%d/%s/%s.png',
+    sfContext::getInstance()->getRequest()->getRelativeUrlRoot(),
+    $size, $size, $context, $name);
 }

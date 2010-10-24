@@ -18,7 +18,7 @@ The sfTangoIconsPlugin offers a set of [Tango Icons](http://tango.freedesktop.or
 
         all:
           tango_icons:
-            size: <?php echo TangoIconsSize::SMALL ?>
+            size: small
 
   * Activate helper in settings.yml:
 
@@ -36,5 +36,23 @@ If you have selected the default size of icons:
 
 If you do not have determined the size of the default icons, or want to manually set the size of icons:
 
-    <img src="<?php echo ti_get_image_path(TangoIconsAction::getContext(), TangoIconsAction::GO_HOME, TangoIconsSize::SMALL) ?>" alt="" />
+    <img src="<?php echo ti_get_image_path(TangoIconsAction::getContext(), TangoIconsAction::GO_HOME, 'small' ?>" alt="" />
 
+## Icon size ##
+
+Proper icon sizes are:
+
+  * For extra small icons:
+    * 16
+    * 16px
+    * extra-small
+    * extra small
+    * x-small
+  * For small icons:
+    * 22
+    * 22px
+    * small
+  * For medium icons:
+    * 32
+    * 32px
+    * medium
