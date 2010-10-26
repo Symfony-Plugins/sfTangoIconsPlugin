@@ -22,7 +22,7 @@ function ti_get_image_uri($context, $name, $size=null) {
  * @return string URI to the action icon
  */
 function ti_get_action_icon_uri($name, $size=null) {
-    return ti_get_image_path(TangoIconsAction::getContext(), $name, $size);
+    return ti_get_image_uri(TangoIconsAction::getContext(), $name, $size);
 }
 
 /**
@@ -32,5 +32,5 @@ function ti_get_action_icon_uri($name, $size=null) {
  * @return string URI to the application icon
  */
 function ti_get_application_icon_uri($name, $size=null) {
-    return ti_get_image_path(TangoIconsApplication::getContext(), $name, $size);
+    return ti_get_image_uri(TangoIconsApplication::getContext(), $name, $size);
 }
