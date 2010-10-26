@@ -32,11 +32,11 @@ The sfTangoIconsPlugin offers a set of [Tango Icons](http://tango.freedesktop.or
 
 If you have selected the default size of icons:
 
-    <img src="<?php echo ti_get_image_path(TangoIconsAction::getContext(), TangoIconsAction::GO_HOME) ?>" alt="" />
+    <img src="<?php echo ti_get_image_uri(TangoIconsAction::getContext(), TangoIconsAction::GO_HOME) ?>" alt="" />
 
 If you do not have determined the size of the default icons, or want to manually set the size of icons:
 
-    <img src="<?php echo ti_get_image_path(TangoIconsAction::getContext(), TangoIconsAction::GO_HOME, 'small' ?>" alt="" />
+    <img src="<?php echo ti_get_image_uri(TangoIconsAction::getContext(), TangoIconsAction::GO_HOME, 'small') ?>" alt="" />
 
 ## Icon size ##
 
