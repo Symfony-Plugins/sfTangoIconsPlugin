@@ -32,5 +32,65 @@ function ti_get_action_icon_uri($name, $size=null) {
  * @return string URI to the application icon
  */
 function ti_get_application_icon_uri($name, $size=null) {
-    return ti_get_image_uri(TangoIconsApplication::getContext(), $name, $size);
+    return ti_get_image_path(TangoIconsApplication::getContext(), $name, $size);
+}
+
+/**
+ * Return a URI to the category icon.
+ * @param string $name Name of the category icon
+ * @param integer $size Icon size
+ * @return string URI to the category icon
+ */
+function ti_get_category_icon_uri($name, $size) {
+    return ti_get_image_path('categories', $name, $size);
+}
+
+/**
+ * Return a URI to the device icon.
+ * @param string $name Name of the device icon
+ * @param integer $size Icon size
+ * @return string URI to the device icon
+ */
+function ti_get_device_icon_uri($name, $size) {
+    return ti_get_image_path('devices', $name, $size);
+}
+
+/**
+ * Return a URI to the emblem icon.
+ * @param string $name Name of the emblem icon
+ * @param integer $size Icon size
+ * @return string URI to the emblem icon
+ */
+function ti_get_emblem_icon_uri($name, $size) {
+    return ti_get_image_path('emblems', $name, $size);
+}
+
+/**
+ * Return a URI to the emot icon.
+ * @param string $name Name of the emot icon
+ * @param integer $size Icon size
+ * @return string URI to the emot icon
+ */
+function ti_get_emot_icon_uri($name, $size) {
+    return ti_get_image_path('emotes', $name, $size);
+}
+
+/**
+ * Return a URI to the mime type icon.
+ * @param string $name Name of the mime type icon
+ * @param integer $size Icon size
+ * @return string URI to the mime type icon
+ */
+function ti_get_mime_type_icon_uri($name, $size) {
+    return ti_get_image_path('mimetypes', $name, $size);
+}
+
+/**
+ * Return a URI to the place icon.
+ * @param string $name Name of the place icon
+ * @param integer $size Icon size
+ * @return string URI to the place icon
+ */
+function ti_get_place_icon_uri($name, $size) {
+    return ti_get_image_path('places', $name, $size);
 }
