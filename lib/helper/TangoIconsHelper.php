@@ -61,8 +61,8 @@ function ti_get_device_icon_uri($name, $size=null) {
  * @param integer $size Icon size
  * @return string URI to the emblem icon
  */
-function ti_get_emblem_icon_uri($name, $size) {
-    return ti_get_image_path('emblems', $name, $size);
+function ti_get_emblem_icon_uri($name, $size=null) {
+    return ti_get_image_path(TangoIconsEmblem::getContext(), $name, $size);
 }
 
 /**
