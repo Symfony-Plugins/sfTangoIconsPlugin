@@ -71,8 +71,8 @@ function ti_get_emblem_icon_uri($name, $size=null) {
  * @param integer $size Icon size
  * @return string URI to the emot icon
  */
-function ti_get_emot_icon_uri($name, $size) {
-    return ti_get_image_path('emotes', $name, $size);
+function ti_get_emot_icon_uri($name, $size=null) {
+    return ti_get_image_path(TangoIconsEmotes::getContext(), $name, $size);
 }
 
 /**
