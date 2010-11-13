@@ -41,8 +41,8 @@ function ti_get_application_icon_uri($name, $size=null) {
  * @param integer $size Icon size
  * @return string URI to the category icon
  */
-function ti_get_category_icon_uri($name, $size) {
-    return ti_get_image_path('categories', $name, $size);
+function ti_get_category_icon_uri($name, $size=null) {
+    return ti_get_image_path(TangoIconsCategory::getContext(), $name, $size);
 }
 
 /**
