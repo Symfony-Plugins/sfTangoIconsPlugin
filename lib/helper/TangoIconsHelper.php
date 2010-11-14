@@ -94,3 +94,13 @@ function ti_get_mime_type_icon_uri($name, $size=null) {
 function ti_get_place_icon_uri($name, $size=null) {
     return ti_get_image_path(TangoIconsPlace::getContext(), $name, $size);
 }
+
+/**
+ * Return a URI to the status icon.
+ * @param string $name Name of the status icon
+ * @param integer $size Icon size
+ * @return string URI to the status icon
+ */
+function ti_get_status_icon_uri($name, $size=null) {
+    return ti_get_image_path(TangoIconsStatus::getContext(), $name, $size);
+}
