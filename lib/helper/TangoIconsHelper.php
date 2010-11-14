@@ -81,8 +81,8 @@ function ti_get_emot_icon_uri($name, $size=null) {
  * @param integer $size Icon size
  * @return string URI to the mime type icon
  */
-function ti_get_mime_type_icon_uri($name, $size) {
-    return ti_get_image_path('mimetypes', $name, $size);
+function ti_get_mime_type_icon_uri($name, $size=null) {
+    return ti_get_image_path(TangoIconsMimeType::getContext(), $name, $size);
 }
 
 /**
