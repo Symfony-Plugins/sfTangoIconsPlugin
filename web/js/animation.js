@@ -12,6 +12,7 @@ function TangoIconsAnimation(selector, size, speed) {
     });
 
     this.start = function() {
+		if(this._timer != null) return;
         var self = this;
         this._timer = window.setInterval(function() {
             self._x -= self._size;
@@ -29,5 +30,6 @@ function TangoIconsAnimation(selector, size, speed) {
 
     this.stop = function() {
         window.clearInterval(this._timer);
+		this._timer = null;
     }
 }
