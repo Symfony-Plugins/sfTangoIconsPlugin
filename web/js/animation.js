@@ -4,12 +4,7 @@ function TangoIconsAnimation(selector, size, speed) {
     this._timer = null;
     this._x = 0;
     this._y = 0;
-    $(this._selector).css({
-        display : 'block',
-        width : size+'px',
-        height : size+'px',
-        background : 'url(images/'+size+'x'+size+'/animations/process-working.png) no-repeat -'+size+'px 0'
-    });
+	$(this._selector).addClass('tango_icons_animation_'+size);
 
     this.start = function() {
 		if(this._timer != null) return;

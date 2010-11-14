@@ -1,0 +1,18 @@
+.tango_icons_animation_16 {
+	display: block;
+	background: url(../images/16x16/animations/process-working.png) no-repeat -16px 0;
+	width: 16px;
+	height: 16px;
+}
+.tango_icons_animation_22 {
+	display: block;
+	background: url(../images/22x22/animations/process-working.png) no-repeat -22px 0;
+	width: 22px;
+	height: 22px;
+}
+.tango_icons_animation_32 {
+	display: block;
+	background: url(../images/32x32/animations/process-working.png) no-repeat -32px 0;
+	width: 32px;
+	height: 32px;
+}
