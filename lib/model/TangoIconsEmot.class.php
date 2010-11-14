@@ -4,7 +4,7 @@
  *
  * @author Tomasz Jakub Rup <tomasz.rup@gmail.com>
  */
-class TangoIconsEmotes
+class TangoIconsEmot
 {
   const
     FACE_ANGEL = 'face-angel',
